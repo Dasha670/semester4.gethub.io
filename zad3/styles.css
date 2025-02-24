@@ -89,4 +89,5 @@ html, body {
   
   input[type="submit"]:hover {
     background-color: #b04f04; /* Цвет фона при наведении */
+    font-size: 25px;
   }
