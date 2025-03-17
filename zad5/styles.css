@@ -1,0 +1,111 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #009013;
+    background-color: #d4ebff;
+}
+main {
+    max-width: 960px;
+    padding: 10px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    background-color: #d4ebff;
+}
+main > .change {
+    display: flex;
+    flex-direction: column;
+}
+.background {
+    background-color: #d4ebff;
+}
+#form {
+    flex: 1;
+    order: 3;
+}
+@media screen and (min-width: 800px) {
+    main > .change {
+        flex-direction: column-reverse;
+    }
+}
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: 'Times New Roman', Times, serif;
+}
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+input[type="submit"] {
+    background-color: #009013;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+input[type="submit"]:hover {
+    background-color: #136000;
+}
+#messages {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+}
+.error {
+    border: 2px solid red;
+}
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+#messages .error {
+    color: #c62828;
+    background-color: #ffebee;
+    border: 1px solid #ffcdd2;
+    padding: 10px;
+    margin: 5px 0;
+}
+#messages .success {
+    color: #1eb225;
+    background-color: #e8f5e9;
+    border: 1px solid #c8e6c9;
+    padding: 10px;
+    margin: 5px 0;
+}
+select option:checked {
+    background-color: #009013;
+    color: white;
+}
+input.error, select.error, textarea.error {
+    border-color: red;
+}
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
