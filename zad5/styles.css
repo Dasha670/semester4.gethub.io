@@ -7,21 +7,21 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     color: #009013;
-    background-color: #d4ebff;
+    background-color: #badab5;
 }
 main {
     max-width: 960px;
     padding: 10px;
     padding-bottom: 40px;
     margin: 0 auto;
-    background-color: #d4ebff;
+    background-color: #badab5;
 }
 main > .change {
     display: flex;
     flex-direction: column;
 }
 .background {
-    background-color: #d4ebff;
+    background-color: #badab5;
 }
 #form {
     flex: 1;

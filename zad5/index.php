@@ -34,9 +34,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     $values['contract_agreed'] = !empty($_COOKIE['contract_agreed_value']);
 
     if (empty($errors) && !empty($_COOKIE[session_name()]) && !empty($_SESSION['login'])) {
-        $user = '42690';
+        $user = 'u42690';
         $pass = '7522024';
-        $db = new PDO('mysql:host=localhost;dbname=42690', $user, $pass, [
+        $db = new PDO('mysql:host=localhost;dbname=u42690', $user, $pass, [
             PDO::ATTR_PERSISTENT => true,
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
         ]);
@@ -128,9 +128,9 @@ if (!empty($errors)) {
     exit();
 }
 
-$user = '42690';
+$user = 'u42690';
 $pass = '7522024';
-$db = new PDO('mysql:host=localhost;dbname=42690', $user, $pass, [
+$db = new PDO('mysql:host=localhost;dbname=u42690', $user, $pass, [
     PDO::ATTR_PERSISTENT => true,
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
 ]);

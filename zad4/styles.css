@@ -7,21 +7,21 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     color: #0b9706;
-    background-color: white;
+    background-color: #419162a0;
 }
 main {
     max-width: 960px;
     padding: 15px; 
     padding-bottom: 40px;
     margin: 0 auto;
-    background-color: #bef6c8;
+    background-color: #419162a0;
 }
 main > .change {
     display: flex;
     flex-direction: column;
 }
 .background {
-    background-color: #bef6c8;
+    background-color: #419162a0;
 }
 #form {
     flex: 1; 
@@ -52,7 +52,7 @@ input, select, textarea {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-family: cursive, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 input[type="radio"], input[type="checkbox"] {
     width: auto; 
@@ -93,6 +93,7 @@ input[type="submit"]:hover {
 
 #messages .success {
     color: #1ac823;
+    font-size: 18px;
     background-color: #e8f5e9;
     border: 1px solid #c8e6c9;
     padding: 10px;
